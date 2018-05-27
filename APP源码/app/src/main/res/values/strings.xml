@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">小新</string>
+    <string name="navigation_title_home">监测</string>
+    <string name="navigation_title_application">设备</string>
+    <string name="navigation_title_user">用户</string>
+
+
+    <string name="introduce_app"> 你好，我是小新，你可以叫我小新同学。我是智能家具系
+        统的控制终端，作为本系统的核心人物，在我的体内集成了语音唤醒、语音识别、
+        语音合成、语言翻译、图灵机器人等人工智能API，我的主要功能有模拟家用电器控制与温湿度采集、
+        以及高温低温预警、湿度超标提醒，此外在生活中我能帮您做英文翻译、方言翻译、
+        二维码和条形码的识别与生成，甚至聊天、讲故事、讲笑话、播报天气、播报日期等，
+        如果您想更具体的了解我可以让我为您阅读相关的使用文档。</string>
+    <string name="master_text">郑州大学移动端设计大赛
+        \n\n小新智能家居系统APP端\n\n 超级小新队伍 \n\n郭晨阳 王小丽</string>
+    <string name="dependencies_text">
+        \n com.jakewharton:butterknife
+        \n org.litepal.android:core
+        \n com.squareup.okhttp3:okhttp
+        \n com.android.support.constraint:constraint-layout
+        \n com.github.dmytrodanylyk.circular-progress-button:library
+        \n com.alibaba:fastjson
+        \n com.github.CymChad:BaseRecyclerViewAdapterHelper
+        \n cn.yipianfengye.android:zxing-library
+        \n com.github.florent37:expectanim
+        \n org.greenrobot:eventbus
+        \n com.github.markushi:circlebutton
+        \n com.kyleduo.switchbutton:library
+        \n com.github.PhilJay:MPAndroidChart
+        \n cn.pedant.sweetalert:library
+        \n com.afollestad.material-dialogs
+        \n pl.droidsonroids.gif:android-gif-drawable
+        \n com.jakewharton:butterknife-compiler</string>
+</resources>

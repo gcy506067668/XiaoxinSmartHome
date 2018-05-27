@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="dbclothes" />
+    <version value="2" />
+    <list>
+        <mapping class="online.letmesleep.iotbasedhome.bean.ApplicationEntity" />
+
+    </list>
+</litepal>

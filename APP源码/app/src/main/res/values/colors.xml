@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8553fa</color>
+    <color name="colorPrimaryDark">#5a5aaa</color>
+    <color name="colorAccent">#37c19e</color>
+    <color name="translucent">#5a000000</color>
+
+    <color name="material_login_login_color">#ffffff</color>
+    <color name="material_login_register_color">#1C86EE</color>
+    <color name="material_login_login_error_color">#ffbebe</color>
+    <color name="material_login_register_error_color">#600002</color>
+
+    <color name="light_off_color">#b2b8d7</color>
+    <color name="light_on_color">#FF9D00</color>
+    <color name="button_background_color">#ea0685ab</color>
+    <color name="color_background_button_al">#3F51B5</color>
+</resources>

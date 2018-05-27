@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapter_light_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="160dp"
+    android:background="@drawable/adapter_control_light_off"
+    android:paddingLeft="8dp"
+    android:layout_margin="8dp">
+
+
+    <LinearLayout
+        android:gravity="top|right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/adapter_light_show_qrcode_image"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_qrcode"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <at.markushi.ui.CircleButton
+            android:id="@+id/adapter_light_share_button"
+            android:layout_marginRight="5dp"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_timeline_black_24dp"
+            app:cb_color="#7898f9"
+            app:cb_pressedRingWidth="8dip" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/adapter_light_edit_button"
+            android:layout_marginRight="5dp"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_mode_edit_white_24dp"
+            app:cb_color="#8553fa"
+            app:cb_pressedRingWidth="8dip" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/adapter_light_remove_button"
+            android:layout_marginRight="5dp"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_delete_sweep_white_24dp"
+            app:cb_color="#a751f8"
+            app:cb_pressedRingWidth="8dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/adapter_light_picture"
+            app:srcCompat="@drawable/light_off_24dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adapter_textview_application_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:paddingLeft="50dp"
+                android:text="设备名称"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/adapter_textview_application_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="50dp"
+                android:text="设备类型"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.kyleduo.switchbutton.SwitchButton
+                app:kswThumbMargin="10dp"
+                app:kswTintColor="@color/light_on_color"
+                android:id="@+id/adapter_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/adapter_textview_switchbutton"
+                android:text="OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

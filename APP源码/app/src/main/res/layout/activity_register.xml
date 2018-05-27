@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:scaleType="fitXY"
+            android:src="@mipmap/detail_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/user_register_phone_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:inputType="phone"
+                    android:id="@+id/user_register_phone"
+                    android:hint="手机号"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/user_register_password_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+                <EditText
+
+                    android:textColor="@android:color/white"
+                    android:id="@+id/user_register_password"
+                    android:hint="密码"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/user_register_truename_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:id="@+id/user_register_truename"
+                    android:hint="姓名"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/user_register_virify_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:textColorHint="#ffffff"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/user_register_virify"
+                    android:layout_marginTop="15dp"
+                    android:hint="验证码"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <com.dd.CircularProgressButton
+                    app:cpb_selectorIdle="@drawable/normal_state_selector"
+                    android:id="@+id/register_phone_yanzhengma"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/white"
+                    app:cpb_cornerRadius="5dp"
+                    app:cpb_textComplete="已发送"
+                    app:cpb_textError="发送失败"
+                    app:cpb_textIdle="发送验证码"
+                    app:cpb_colorIndicator="@color/colorPrimary"/>
+            </LinearLayout>
+            <com.dd.CircularProgressButton
+                android:layout_marginBottom="10dp"
+                app:cpb_selectorIdle="@drawable/normal_state_selector"
+                android:id="@+id/register_user_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                app:cpb_cornerRadius="5dp"
+                app:cpb_textComplete="已发送"
+                app:cpb_textError="发送失败"
+                app:cpb_textIdle="注    册"
+                app:cpb_colorIndicator="@color/colorPrimary"/>
+
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="注册即同意《隐私条款》"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/cpb_white"
+                android:id="@+id/user_register_login"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="已有帐号 立即登录"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

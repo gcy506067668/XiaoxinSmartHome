@@ -1,0 +1,159 @@
+
+.uc-offcanvas-wrapper,
+.uc-offcanvas-pusher,
+.uc-offcanvas-contents {
+    height : 100%;
+    }
+
+.uc-offcanvas-contents {
+    /* overflow-y : scroll;
+ background : #f3efe0; */
+    }
+
+.uc-offcanvas-open .uc-offcanvas-contents,
+.uc-offcanvas-open .uc-offcanvas-contents-inner {
+
+    }
+
+.uc-offcanvas-html-open, .uc-offcanvas-body-open {
+    height : 100%
+    }
+
+.uc-offcanvas-contents,
+.uc-offcanvas-contents-inner {
+    position : relative;
+    }
+
+.uc-offcanvas-wrapper {
+    position : relative;
+    overflow : hidden;
+    }
+
+.uc-offcanvas-pusher::after {
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    width              : 0;
+    height             : 0;
+    background         : rgba(0, 0, 0, 0.5);
+    content            : '';
+    opacity            : 0;
+    -webkit-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    -moz-transition    : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    -o-transition      : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    transition         : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    z-index            : 999;
+    }
+
+.uc-offcanvas-open .uc-offcanvas-pusher::after {
+    width              : 100%;
+    height             : 100%;
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s;
+    -moz-transition    : opacity 0.5s;
+    -o-transition      : opacity 0.5s;
+    transition         : opacity 0.5s;
+    }
+
+.slide-along .uc-offcanvas-pusher {
+    background-color   : #FFFFFF;
+    position           : relative;
+    left               : 0;
+    z-index            : 1;
+    height             : 100%;
+    -webkit-transition : -webkit-transform 400ms;
+    -moz-transition    : -moz-transform 400ms;
+    -ms-transition     : -ms-transform 400ms;
+    -o-transition      : -o-transform 400ms;
+    transition         : transform 400ms;
+    }
+
+.slide-along .uc-offcanvas-container {
+    position           : absolute;
+    top                : 0;
+    left               : 0;
+    visibility         : hidden;
+    z-index            : 0;
+
+    width              : 300px;
+    height             : 100%;
+    background         : #27272C; /* Will Change */
+    -webkit-transition : all 400ms;
+    -moz-transition    : all 400ms;
+    -o-transition      : all 400ms;
+    transition         : all 400ms;
+    }
+
+.uc-offcanvas-container > div {
+    overflow-y : scroll;
+    overflow-x : hidden;
+    height     : calc(100% - 0px);
+    visibility : visible;
+    }
+
+.uc-offcanvas-container > div::-webkit-scrollbar {
+    width : 0px;
+    }
+
+.uc-offcanvas-left .uc-offcanvas-container {
+    left : 0;
+    }
+
+.uc-offcanvas-right .uc-offcanvas-container {
+    left  : auto;
+    right : 0;
+    }
+
+/* Individual effects */
+
+.uc-offcanvas-left.slide-along.uc-offcanvas-open .uc-offcanvas-pusher {
+    -webkit-transform : translate(300px, 0);
+    -moz-transform    : translate(300px, 0);
+    -ms-transform     : translate(300px, 0);
+    -o-transform      : translate(300px, 0);
+    transform         : translate(300px, 0);
+    }
+
+.uc-offcanvas-right.slide-along.uc-offcanvas-open .uc-offcanvas-pusher {
+    -webkit-transform : translate(-300px, 0);
+    -moz-transform    : translate(-300px, 0);
+    -ms-transform     : translate(-300px, 0);
+    -o-transform      : translate(-300px, 0);
+    transform         : translate(-300px, 0);
+    }
+
+.uc-offcanvas-left.slide-along .uc-offcanvas-container {
+    -webkit-transform : translate(-50%, 0);
+    -moz-transform    : translate(-50%, 0);
+    -ms-transform     : translate(-50%, 0);
+    -o-transform      : translate(-50%, 0);
+    transform         : translate(-50%, 0);
+    }
+
+.uc-offcanvas-right.slide-along .uc-offcanvas-container {
+    -webkit-transform : translate(50%, 0);
+    -moz-transform    : translate(50%, 0);
+    -ms-transform     : translate(50%, 0);
+    -o-transform      : translate(50%, 0);
+    transform         : translate(50%, 0);
+    }
+
+.slide-along.uc-offcanvas-open .uc-offcanvas-container {
+    visibility         : visible;
+
+    -webkit-transform  : translate(0, 0);
+    -moz-transform     : translate(0, 0);
+    -ms-transform      : translate(0, 0);
+    -o-transform       : translate(0, 0);
+    transform          : translate(0, 0);
+
+    -webkit-transition : -webkit-transform 400ms;
+    -moz-transition    : -webkit-transform 400ms;
+    -ms-transition     : -webkit-transform 400ms;
+    -o-transition      : -webkit-transform 400ms;
+    transition         : transform 400ms;
+    }
+
+.slide-along .uc-offcanvas-container::after {
+    display : none;
+    }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="online.letmesleep.iotbasedhome.CreateQRCodeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:scaleType="fitXY"
+            android:src="@mipmap/detail_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+                <EditText
+                    android:id="@+id/create_qrcode_edit_application_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="设备名称"
+                    android:maxLines="1"
+                    android:textColor="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+                <EditText
+                    android:id="@+id/create_qrcode_edit_application_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="设备识别ID"
+                    android:maxLines="1"
+                    android:textColor="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+                <EditText
+                    android:id="@+id/create_qrcode_edit_application_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="设备类型"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:textColor="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/create_qrcode_edit_application_create_button"
+                android:textColor="#ffffff"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="生成二维码"
+                android:background="@drawable/adapter_application_background"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/create_qrcode_imageview"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="240dp"
+                android:layout_height="240dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

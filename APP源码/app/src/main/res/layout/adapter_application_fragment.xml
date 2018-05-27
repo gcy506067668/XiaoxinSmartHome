@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapter_light_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="260dp"
+    android:background="@drawable/adapter_application_background"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:gravity="top|right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="#8553fa"
+                android:id="@+id/adapter_application_qrcode_image"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="13dp"
+                android:src="@mipmap/ic_qrcode"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/adapter_textview_application_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="设备名称"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <at.markushi.ui.CircleButton
+            android:id="@+id/adapter_application__share_button"
+            android:layout_marginRight="2dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_timeline_black_24dp"
+            app:cb_color="#fc8373"
+            app:cb_pressedRingWidth="8dip" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/adapter_application_setting_button"
+            android:layout_marginRight="2dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_equalizer_white_24dp"
+            app:cb_color="#7898f9"
+            app:cb_pressedRingWidth="8dip" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/adapter_application_edit_button"
+            android:layout_marginRight="2dp"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_mode_edit_white_24dp"
+            app:cb_color="#538a"
+            app:cb_pressedRingWidth="8dip" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/adapter_application_remove_button"
+            android:layout_marginRight="2dp"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_delete_sweep_white_24dp"
+            app:cb_color="#a751f8"
+            app:cb_pressedRingWidth="8dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffff"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/adapter_textview_application_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="设备类型"
+                android:textColor="#8553fa"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/adapter_textview_application_current_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="当前值："
+                android:textColor="#8553fa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/adapter_textview_application_highlimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="最高值："
+                android:textColor="#8553fa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/adapter_textview_application_lowlimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="最低值："
+                android:textColor="#8553fa"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/fragment_user_login"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ic_account_circle_24dp"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/username"
+            android:text="登录/注册"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/button_basic_setting"
+                            android:layout_width="64dip"
+                            android:layout_height="64dip"
+                            android:src="@drawable/ic_settings_white_24dp"
+                            app:cb_color="#ee9745"
+                            app:cb_pressedRingWidth="8dip" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="使用简介"
+                        android:textSize="14sp"
+                        android:textColor="#ee9745"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/button_voice_setting"
+                            android:layout_width="64dip"
+                            android:layout_height="64dip"
+
+                            android:src="@drawable/ic_settings_voice_white_24dp"
+                            app:cb_color="#8553fa"
+                            app:cb_pressedRingWidth="8dip" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="语音设置"
+                        android:textSize="14sp"
+                        android:textColor="#8553fa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/button_th_limit"
+                            android:layout_width="64dip"
+                            android:layout_height="64dip"
+                            android:src="@drawable/ic_timeline_black_24dp"
+                            app:cb_color="#a751f8"
+                            app:cb_pressedRingWidth="8dip" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="温湿度值"
+                        android:textSize="14sp"
+                        android:textColor="#a751f8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/button_master"
+                            android:layout_width="64dip"
+                            android:layout_height="64dip"
+                            android:src="@drawable/ic_insert_emoticon_black_24dp"
+                            app:cb_color="#fc8373"
+                            app:cb_pressedRingWidth="8dip" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="开发者"
+                        android:textSize="14sp"
+                        android:textColor="#fc8373"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/button_depency"
+                            android:layout_width="64dip"
+                            android:layout_height="64dip"
+                            android:src="@drawable/ic_widgets_black_24dp"
+                            app:cb_color="#7898f9"
+                            app:cb_pressedRingWidth="8dip" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="依赖库"
+                        android:textSize="14sp"
+                        android:textColor="#7898f9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/button_version"
+                            android:layout_width="64dip"
+                            android:layout_height="64dip"
+                            android:src="@drawable/ic_device_hub_black_24dp"
+                            app:cb_color="#fa72f1"
+                            app:cb_pressedRingWidth="8dip" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="版本号"
+                        android:textSize="14sp"
+                        android:textColor="#fa72f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/master_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#fc8373"
+                    android:textSize="18sp"
+                    android:text="@string/master_text"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/depency_layout"
+                android:visibility="invisible"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="依赖库"
+                    android:textColor="#7898f9" />
+
+                <TextView
+                    android:id="@+id/depency_scroll_text"
+                    android:scrollbars="none"
+                    android:textColor="#7898f9"
+                    android:gravity="left|center_vertical"
+                    android:textSize="18sp"
+                    android:text="@string/dependencies_text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/version_layout"
+                android:visibility="invisible"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:scrollbars="none"
+                    android:textColor="#fa72f1"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="智能家居系统APP VERSION 1.0.0"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

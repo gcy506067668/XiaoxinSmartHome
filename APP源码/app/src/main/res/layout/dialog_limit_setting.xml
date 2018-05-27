@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_user_fragment_limitsetting">
+    <LinearLayout
+        android:background="#00000000"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="温度"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+            <EditText
+                android:id="@+id/dialog_limit_setting_temp_high"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="温度上限"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/dialog_limit_setting_temp_low"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="温度下限"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:text="湿度"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+            <EditText
+                android:id="@+id/dialog_limit_setting_humi_high"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="湿度上限"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/dialog_limit_setting_humi_low"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="湿度下限"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_control"
+        android:icon="@drawable/ic_lightbulb_outline_black_24dp"
+        android:title="设备" />
+
+    <item
+        android:id="@+id/navigation_application"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="监测" />
+
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="我的" />
+
+</menu>
