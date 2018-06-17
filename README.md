@@ -18,7 +18,7 @@
 
 
 
-![介绍页面](./服务器源码/src/main/resources/images/function_introduce.png)
+![介绍页面](./服务器源码/src/main/resources/images/function_introduce.jpg)
 
 ### 登录与注册 :cyclone:
 
