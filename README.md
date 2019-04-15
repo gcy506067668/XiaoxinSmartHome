@@ -1,8 +1,10 @@
-小新智能家居系统 <img src="./服务器源码/src/main/resources/images/icon.png" width = "60" height = "60" alt="图片名称" align=center />
+全语音交互控制智能家居系统 <img src="./服务器源码/src/main/resources/images/icon.png" width = "60" height = "60" alt="图片名称" align=center />
 =========================
+
 
 ![版本号](https://img.shields.io/badge/Version-V1.0.0-5a5aaa.svg)  ![开发平台](https://img.shields.io/badge/Platform-Android|ESP8266-orange.svg)  ![开发语言](https://img.shields.io/badge/language-Java|C-green.svg) ![关键词](https://img.shields.io/badge/KeyWord-SmartHome|VoiceInteraction-blue.svg)
 *****************
+
 ## 简介 :cyclone:
 ----------------------------------
 ![小新](./服务器源码/src/main/resources/images/title.jpg)
@@ -49,3 +51,6 @@
 
 
 --------------------------------
+声明：本作品用于仅用于学习和技术交流，系统中背景图片、图标等资源均来自网络，本作品未进行任何商业活动。
+作者邮箱：506067668@qq.com
+----------------------------
