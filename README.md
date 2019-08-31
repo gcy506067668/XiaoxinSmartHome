@@ -1,4 +1,4 @@
-全语音交互控制智能家居系统 <img src="./服务器源码/src/main/resources/images/icon.png" width = "60" height = "60" alt="图片名称" align=center />
+语音交互智能家居系统 <img src="./服务器源码/src/main/resources/images/icon.png" width = "60" height = "60" alt="图片名称" align=center />
 =========================
 
 
