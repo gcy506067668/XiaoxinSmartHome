@@ -14,17 +14,17 @@ import online.letmesleep.iotbasedhome.ifly.IFLYSpeaker;
 
 public class Config {
     // basic url
-    public static final String LIGHT_BASIC_URL = "**********";
-    public static final String LOGIN_URL = "**********";
-    public static final String REGISTER_URL = "**********";
-    public static final String TEMP_HUMIDITY_URL = "**********";
-    public static final String TULING_API_URL = "**********";
-    public static final String LIGHT_STATUE_URL = "**********";
+    public static final String LIGHT_BASIC_URL = "http://localhost:80";
+    public static final String LOGIN_URL = "http://localhost:80";
+    public static final String REGISTER_URL = "http://localhost:80";
+    public static final String TEMP_HUMIDITY_URL = "http://localhost:80";
+    public static final String TULING_API_URL = "http://localhost:80";
+    public static final String LIGHT_STATUE_URL = "http://localhost:80";
 
     //api config
-    public static final String BAIDU_WAKE_UP_APP_ID = "**********";
-    public static final String BAIDU_WAKE_UP_API_KEY = "**********";
-    public static final String BAIDU_WAKE_UP_SECRET_KEY = "**********";
+    // public static final String BAIDU_WAKE_UP_APP_ID = "**********";
+    // public static final String BAIDU_WAKE_UP_API_KEY = "**********";
+    // public static final String BAIDU_WAKE_UP_SECRET_KEY = "**********";
     public static final String IFLY_APPID = "**********";
     public static final String TULING_APPKEY = "**********";
     public static final String TRANSLATE_APP_ID = "**********";
